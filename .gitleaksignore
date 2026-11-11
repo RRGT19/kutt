@@ -1,0 +1,4 @@
+# JWT de fixtures de tests (falsos positivos)
+817eafafe10f817c0c93f41cb54ceddac7f5439b:client/actions/__test__/auth.js:jwt:28
+817eafafe10f817c0c93f41cb54ceddac7f5439b:client/actions/__test__/url.js:jwt:16
+817eafafe10f817c0c93f41cb54ceddac7f5439b:client/actions/__test__/settings.js:jwt:27

@@ -1,0 +1,11 @@
+/.github/                     @RRGT19
+/.gitleaksignore              @RRGT19
+/Dockerfile                   @RRGT19
+/.dockerignore                @RRGT19
+/docker-compose*.yml          @RRGT19
+/package.json                 @RRGT19
+/package-lock.json            @RRGT19
+/AGENTS.md                    @RRGT19
+/CLAUDE.md                    @RRGT19
+/.cursorrules                 @RRGT19
+/.cursor/                     @RRGT19
