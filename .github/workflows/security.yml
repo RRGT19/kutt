@@ -79,8 +79,6 @@ jobs:
           curl -sSfLO "${base}/trivy_${TRIVY_VERSION}_checksums.txt"
           grep "trivy_${TRIVY_VERSION}_Linux-64bit.tar.gz" "trivy_${TRIVY_VERSION}_checksums.txt" | sha256sum -c -
           tar -xzf "trivy_${TRIVY_VERSION}_Linux-64bit.tar.gz" trivy
-      # La deuda existente se reporta en Code scanning sin romper el build; las nuevas
-      # vulnerabilidades altas/críticas las bloquea el job "dependencias" en cada PR.
       - name: Trivy fs (vulnerabilidades + configuración)
         run: |
           ./trivy fs --scanners vuln,misconfig --exit-code 0 --format sarif --output trivy.sarif .

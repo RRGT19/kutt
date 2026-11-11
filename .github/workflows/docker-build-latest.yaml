@@ -13,7 +13,6 @@ permissions: {}
 
 jobs:
   dockerhub-build-push:
-    # Solo publica desde el repositorio oficial (evita ejecuciones fallidas en forks sin secretos)
     if: github.repository == 'thedevs-network/kutt'
     runs-on: ubuntu-latest
     permissions:
