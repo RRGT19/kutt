@@ -13,10 +13,13 @@ RUN --mount=type=bind,source=package.json,target=package.json \
     --mount=type=cache,target=/root/.npm \
     npm ci --omit=dev
 
-RUN mkdir -p /var/lib/kutt
+RUN mkdir -p /var/lib/kutt && chown node:node /var/lib/kutt
 
 # copy the rest of source files into the image
 COPY . .
+
+RUN mkdir -p /kutt/db && chown -R node:node /kutt/db
+USER node
 
 # expose the port that the app listens on
 EXPOSE 3000
