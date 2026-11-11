@@ -9,10 +9,6 @@ on:
 
 permissions: {}
 
-concurrency:
-  group: security-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
   secretos:
     name: Secretos (gitleaks, historial completo)
